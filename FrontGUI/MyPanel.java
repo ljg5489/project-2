@@ -19,14 +19,14 @@ public class MyPanel extends JPanel implements ActionListener
     protected JTextField mtf_BorrowerName, mtf_BookTitle, mtf_BookAuthor, mtf_BookID;
     protected JButton mb_Run;
     protected JTextArea mta;
-    protected String[] loanORreturn = {"대출", "반납", "대출 가능 책", "대출 불가능 책"};
+    protected String[] loanORreturn = {"이용자 등록", "책 등록", "대출가능한 책 목록", 
+        "대출 불가능한 책 목록","대출", "반납"};
     protected JComboBox mcb_loanORreturn;
     protected String output = "";
     protected int index;
-
     public MyPanel(){
         ml_BorrowerName = new JLabel("이용자 이름");
-        ml_BookTitle = new JLabel("책 제목");
+        ml_BookTitle = new JLabel("   책 제목    ");
         ml_BookAuthor = new JLabel("책 저자이름");
         ml_BookID = new JLabel("책 등록번호");
 
@@ -74,12 +74,10 @@ public class MyPanel extends JPanel implements ActionListener
         }   
 
         if(index == 0 && e.getSource().equals(mb_Run)){
-            String outputTitle = libApp.loanOneBook(mtf_BorrowerName.getText(), mtf_BookID.getText());
-            mta.append(outputTitle + "\n" + output);
+
         }
         else if(index == 1 && e.getSource().equals(mb_Run)){
-            String outputTitle = libApp.returnOneBook(mtf_BookID.getText());
-            mta.append(outputTitle + "\n" + output);
+
         }
         else if(index == 2 && e.getSource().equals(mb_Run)){
             String outputTitle = libApp.displayBookForLoan();
@@ -89,6 +87,13 @@ public class MyPanel extends JPanel implements ActionListener
             String outputTitle = libApp.displayBookOnLoan();
             mta.append(outputTitle + "\n");
         }
-
+        else if(index == 4 && e.getSource().equals(mb_Run)){
+            String outputTitle = libApp.loanOneBook(mtf_BorrowerName.getText(), mtf_BookID.getText());
+            mta.append(outputTitle + "\n" + output);
+        }
+        else if(index == 5 && e.getSource().equals(mb_Run)){
+            String outputTitle = libApp.returnOneBook(mtf_BookID.getText());
+            mta.append(outputTitle + "\n" + output);
+        }
     }
 }
