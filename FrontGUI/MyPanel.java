@@ -81,11 +81,14 @@ public class MyPanel extends JPanel implements ActionListener
             String outputTitle = libApp.returnOneBook(mtf_BookID.getText());
             mta.append(outputTitle + "\n" + output);
         }
-        else if(index ==2 && e.getSource().equals(mb_Run)){
+        else if(index == 2 && e.getSource().equals(mb_Run)){
             String outputTitle = libApp.displayBookForLoan();
             mta.append(outputTitle + "\n");
         }
-        
+        else if(index == 3 && e.getSource().equals(mb_Run)){
+            String outputTitle = libApp.displayBookOnLoan();
+            mta.append(outputTitle + "\n");
+        }
 
     }
 }
