@@ -17,5 +17,6 @@ public class MyFrame extends JFrame
         this.setVisible(true);
         
         this.add(new MyPanel());
+        
     }
 }
