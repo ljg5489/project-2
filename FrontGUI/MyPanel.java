@@ -17,7 +17,7 @@ public class MyPanel extends JPanel implements ActionListener
 
     protected JLabel ml_BorrowerName, ml_BookTitle, ml_BookAuthor, ml_BookID;
     protected JTextField mtf_BorrowerName, mtf_BookTitle, mtf_BookAuthor, mtf_BookID;
-    protected JButton mb_Run, mb_Clear;
+    protected JButton mb_Run;
     protected JTextArea mta;
     protected String[] loanORreturn = {"대출", "반납", "대출 불가능 책", "대출 가능 책"};
     protected JComboBox mcb_loanORreturn;
@@ -49,15 +49,13 @@ public class MyPanel extends JPanel implements ActionListener
 
         mb_Run = new JButton("실행");
         this.add(mb_Run);
-        mb_Clear = new JButton("Clear");
-        this.add(mb_Clear);
 
         mta = new JTextArea(20, 25);
         this.add(new JScrollPane(mta));
 
         mcb_loanORreturn.addActionListener(this);
         mb_Run.addActionListener(this);
-        mb_Clear.addActionListener(this);
+        
 
     }
 
@@ -83,12 +81,8 @@ public class MyPanel extends JPanel implements ActionListener
             String outputTitle = libApp.returnOneBook(mtf_BookID.getText());
             mta.append(outputTitle + "\n" + output);
         }
-        else if(e.getSource().equals(mb_Clear)){
-            mtf_BorrowerName.setText("");
-            mtf_BookTitle.setText("");
-            mtf_BookAuthor.setText("");
-            mtf_BookID.setText("");
-        }
+
+        
 
     }
 }
