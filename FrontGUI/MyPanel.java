@@ -19,7 +19,7 @@ public class MyPanel extends JPanel implements ActionListener
     protected JTextField mtf_BorrowerName, mtf_BookTitle, mtf_BookAuthor, mtf_BookID;
     protected JButton mb_Run;
     protected JTextArea mta;
-    protected String[] loanORreturn = {"대출", "반납", "대출 불가능 책", "대출 가능 책"};
+    protected String[] loanORreturn = {"대출", "반납", "대출 가능 책", "대출 불가능 책"};
     protected JComboBox mcb_loanORreturn;
     protected String output = "";
     protected int index;
@@ -81,7 +81,10 @@ public class MyPanel extends JPanel implements ActionListener
             String outputTitle = libApp.returnOneBook(mtf_BookID.getText());
             mta.append(outputTitle + "\n" + output);
         }
-
+        else if(index ==2 && e.getSource().equals(mb_Run)){
+            String outputTitle = libApp.displayBookForLoan();
+            mta.append(outputTitle + "\n");
+        }
         
 
     }
