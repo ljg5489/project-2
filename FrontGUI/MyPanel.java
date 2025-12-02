@@ -7,8 +7,8 @@ import CoreEngine.*;
 /**
  * LibraryApplication의 패널(Event Listener Object의 역할 겸용)
  *
- * @author (profsHwang)
- * @version (2025.11.26)
+ * @author (2022320005 이진규, 2022320009 이상원)
+ * @version (2025.12.2)
  */
 public class MyPanel extends JPanel implements ActionListener
 {
