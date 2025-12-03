@@ -12,9 +12,10 @@ import CoreEngine.*;
  */
 public class MyPanel extends JPanel implements ActionListener
 {
+    MyFrame myFrame = new MyFrame();
     protected JPanel buttonPanel;
     protected JPanel outputDataPanel;
-
+    
     protected JLabel ml_BorrowerName, ml_BookTitle, ml_BookAuthor, ml_BookID;
     protected JTextField mtf_BorrowerName, mtf_BookTitle, mtf_BookAuthor, mtf_BookID;
     protected JButton mb_Run;
@@ -74,10 +75,10 @@ public class MyPanel extends JPanel implements ActionListener
         }   
 
         if(index == 0 && e.getSource().equals(mb_Run)){
-
+            
         }
         else if(index == 1 && e.getSource().equals(mb_Run)){
-
+            RegBookFrame rbf = new RegBookFrame();
         }
         else if(index == 2 && e.getSource().equals(mb_Run)){
             String outputTitle = libApp.displayBookForLoan();
