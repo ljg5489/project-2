@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.*;
 import CoreEngine.*;
 /**
- * ResBookPanel 클래스의 설명을 작성하세요.
+ * ResBookPanel 클래스: 책 등록을 위한 패널
  *
  * @author (작성자 이름)
  * @version (버전 번호 또는 작성한 날짜)

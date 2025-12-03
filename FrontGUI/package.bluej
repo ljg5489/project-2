@@ -1,18 +1,18 @@
 #BlueJ package file
-dependency1.from=RegBookFrame
-dependency1.to=RegBookPanel
+dependency1.from=MyFrame
+dependency1.to=MyPanel
 dependency1.type=UsesDependency
-dependency2.from=MyFrame
-dependency2.to=MyPanel
+dependency2.from=MyPanel
+dependency2.to=RegBorrowerFrame
 dependency2.type=UsesDependency
 dependency3.from=MyPanel
-dependency3.to=RegBorrowerFrame
+dependency3.to=RegBookFrame
 dependency3.type=UsesDependency
-dependency4.from=MyPanel
-dependency4.to=RegBookFrame
+dependency4.from=RegBorrowerFrame
+dependency4.to=RegBorrowerPanel
 dependency4.type=UsesDependency
-dependency5.from=RegBorrowerFrame
-dependency5.to=RegBorrowerPanel
+dependency5.from=RegBookFrame
+dependency5.to=RegBookPanel
 dependency5.type=UsesDependency
 objectbench.height=93
 objectbench.width=763

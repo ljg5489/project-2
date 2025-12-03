@@ -2,7 +2,7 @@ package FrontGUI;
 
 import javax.swing.*;
 /**
- * RegBookFrame 클래스의 설명을 작성하세요.
+ * RegBookFrame 클래스: 책 등록을 위한 프레임
  *
  * @author (작성자 이름)
  * @version (버전 번호 또는 작성한 날짜)
