@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.*;
 import CoreEngine.*;
 /**
- * RegBorrowerPanel 클래스: 이용자 이름 등록을 위한 패널
+ * RegBorrowerPanel 클래스: 이용자 등록을 위한 패널
  *
  * @author (2024320060 전채금)
  * @version (2025.12.03)
