@@ -12,7 +12,6 @@ import CoreEngine.*;
  */
 public class MyPanel extends JPanel implements ActionListener
 {
-    MyFrame myFrame = new MyFrame();
     protected JPanel buttonPanel;
     protected JPanel outputDataPanel;
     
