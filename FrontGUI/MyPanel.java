@@ -7,7 +7,7 @@ import CoreEngine.*;
 /**
  * LibraryApplication의 패널(Event Listener Object의 역할 겸용)
  *
- * @author (2022320005 이진규, 2022320009 이상원)
+ * @author (2022320005 이진규, 2022320009 이상원, 2024320060 전채금)
  * @version (2025.12.2)
  */
 public class MyPanel extends JPanel implements ActionListener
@@ -74,7 +74,7 @@ public class MyPanel extends JPanel implements ActionListener
         }   
 
         if(index == 0 && e.getSource().equals(mb_Run)){
-            
+            RegBorrowerFrame rbf = new RegBorrowerFrame();
         }
         else if(index == 1 && e.getSource().equals(mb_Run)){
             RegBookFrame rbf = new RegBookFrame();
