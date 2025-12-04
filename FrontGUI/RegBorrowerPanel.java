@@ -28,7 +28,6 @@ public class RegBorrowerPanel extends JPanel implements ActionListener
         this.add(mb_BorrowerRegister);
         
         mta = new JTextArea(10, 25);
-        mta.setEditable(false);
         this.add(new JScrollPane(mta));
         
         mb_BorrowerRegister.addActionListener(this);
